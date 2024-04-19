@@ -1,0 +1,34 @@
+{
+  "name": "authmern",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "server": "nodemon api/index.js",
+    "client": "npm run dev --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\" ",
+    "build": "npm install && npm install --prefix client && npm run build --prefix client"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "bcrypt": "^5.1.1",
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^7.5.0",
+    "react-icons": "^5.0.1",
+    "swiper": "^11.0.7"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "i": "^0.3.7",
+    "nodemon": "^3.1.0",
+    "npm": "^10.5.0"
+  }
+}
